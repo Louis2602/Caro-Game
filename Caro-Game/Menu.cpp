@@ -131,7 +131,7 @@ void Menu::printAnimation()
 	int color[] = { LIGHT_AQUA, AQUA, LIGHT_BLUE, BLUE, LIGHT_PURPLE, PURPLE };
 	int wide[] = { 8,9,8,8,8,9 }; int left[] = { 27, 35, 49, 57, 65, 73 };
 	int colorcount = 0;
-	int loop = 11;
+	int loop = 5;
 	while (loop--)
 	{
 		for (int i = 0; i < n; i += 2)
@@ -250,7 +250,7 @@ void Menu::helpScreen()
 	putchar(197);
 	Common::gotoXY(line3, line2);
 	putchar(197);
-
+	//=====================================================================//
 	Common::setConsoleColor(BRIGHT_WHITE, RED);
 	Common::gotoXY(left + 3, top + 2);
 	cout << "Moves:";
@@ -262,8 +262,7 @@ void Menu::helpScreen()
 	putchar(249); cout << "Left:  A, left arrow";
 	Common::gotoXY(left + 52, top + 3);
 	putchar(249); cout << "Right: D, right arrow";
-
-
+	//=====================================================================//
 	Common::gotoXY(left + 3, top + 10);
 	cout << "Rules:";
 	Common::gotoXY(left + 13, top + 5);
@@ -285,7 +284,7 @@ void Menu::helpScreen()
 	putchar(249); cout << "The row can be horizontal, vertical, or diagonal as long as";
 	Common::gotoXY(left1, top + 16);
 	cout << " it is unbroken.";
-
+	//=====================================================================//
 	Common::gotoXY(left + 3, top + 20);
 	cout << "About:";
 	Common::gotoXY(left + 28, top + 18);

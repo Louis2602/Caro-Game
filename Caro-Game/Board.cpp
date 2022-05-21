@@ -15,7 +15,7 @@ Board::~Board()
 	for (int i = 0; i < _size; i++)
 		delete[] _pArr[i];
 	delete[] _pArr,
-		_pArr = nullptr;
+	_pArr = nullptr;
 	delete[] _winPos;
 	_winPos = nullptr;
 }
